@@ -9,13 +9,6 @@
             padding: 0;
         }
 
-        @media (max-width : 499px) {
-            body { width: auto; }
-            #navbox { width: auto; float: none; overflow: hidden; position: static; }
-            #myprf { width: auto; float: none; overflow: hidden; }
-            #navbox p { width: auto; float: none; overflow: hidden ; }
-        }
-
         #navbox {
             position: fixed;
             margin-top: 50px; margin-left: 50px;
@@ -100,8 +93,70 @@
         section:target { display: block; }
 
         #home {
-            display: block; /* 기본적으로 home 섹션을 표시 */
+            display: block;
         }
+
+        @media (max-width : 499px) {
+            body { width: auto; }
+            #navbox {
+                position: relative;
+                max-width: 250px;
+                max-height: 200px;
+                top: 30px; left:25%;
+                margin: 0 auto;
+            }
+
+           
+
+    #home, #AboutMe, #Interest {
+        position: absolute;
+        margin: 100px;
+        display: none;
+    }
+
+    #home:target, #AboutMe:target, #Interest:target {
+        display: block;
+    }
+
+    #fam, #mbti, #g1, #g2, #g3, #g4{
+        position: absolute;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 300px;
+        margin: 0 auto;
+        float:none;
+    }
+
+    #mbti {height: 300px;}
+
+    #f,#m,#Interest p {
+        margin: 300px auto;
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: smaller;
+    }
+
+    #f,#m {margin:350px,0;}
+
+    #myprf {
+        display: none;
+    }
+
+    #navbox p {
+        display: none;
+    }
+
+    #mypic {
+        position: absolute;
+        background-repeat: no-repeat;
+        background-position: center;
+        max-width: 300px;
+        margin: 0 auto;
+        float:none;
+    }
+        }
+        section { margin-top: 100px; display: none; }
+        section:target { display: block; }
     </style>
 </head>
 <body>
