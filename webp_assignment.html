@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1">
+    <title>YeonSeoKim Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        @media (max-width : 499px) {
+            body { width: auto; }
+            #navbox { width: auto; float: none; overflow: hidden; position: static; }
+            #myprf { width: auto; float: none; overflow: hidden; }
+            #navbox p { width: auto; float: none; overflow: hidden ; }
+        }
+
+        #navbox {
+            position: fixed;
+            margin-top: 50px; margin-left: 50px;
+            width: 250px; height: 550px;
+            border-color: black;
+            background-color: rgb(134, 176, 195);
+            border-radius: 50px;
+        }
+
+        #myprf {
+            background-size: 100%;
+            background-image: url('./KakaoTalk_20240530_010636114_04.jpg');
+            position: fixed;
+            margin-top: 100px; margin-left: 75px;
+            width: 200px; height: 250px;
+            background-color: white;
+        }
+
+        #navbox p {
+            margin-top: 300px;
+            font-size: smaller; color: white; text-align: center; font-weight: bold;
+        }
+
+        #navbox > a {
+            color: white; font-size: smaller; margin-left: 50px; border: solid 3px; border-radius: 10px;
+        }
+
+        nav > ul { padding-left: 0; }
+        ul > li { list-style: none; text-align: center; }
+        li > a { color: rgb(228, 246, 63); font-weight: bold; }
+
+        #navbox > h1 { color: rgb(228, 246, 63); font-size: medium; text-align: center; }
+
+        #mypic {
+            margin-top: 50px;
+            margin-left: 500px;
+            width: 800px; height: 600px;
+            background-size: 100%;
+            background-image: url('./mp2.jpg');
+            border-radius: 30%;
+        }
+
+        #mypic, #navbox { display: inline-block; }
+
+        #mypic > span { color: rgb(228, 246, 63); font-weight: bold; background-color: rgb(134, 176, 195); }
+
+        #fam {
+            width: 400px; height: 300px;
+            background-size: 100%; background-image: url('./fam.jpg');
+            float: right;
+        }
+
+        #f { margin-left: 330px; margin-top: 100px; text-align: right; }
+
+        #mbti {
+            width: 200px; height: 200px;
+            margin-left: 330px;
+            background-size: 100%; background-image: url('./mbti.jpg');
+            float: left;
+        }
+
+        #m { margin-left: 330px; text-align: left; color: rgb(134, 176, 195); }
+
+        #Interest { overflow: hidden; }
+
+        a:hover { color: brown; }
+
+        #Interest div {
+            width: 250px; height: 250px; background-size: 100%;
+            margin-top: 50px;
+            float: left;
+        }
+
+        #g1 { background-image: url('./g1.jpg'); margin-left: 330px; }
+        #g2 { background-image: url('./g2.jpg'); }
+        #g3 { background-image: url('./g3.jpg'); }
+        #g4 { background-image: url('./g4.jpg'); }
+
+        #Interest p { margin-top: 50px; margin-left: 330px; float: right; color: rgb(134, 176, 195); }
+
+        section { margin-top: 100px; display: none; }
+        section:target { display: block; }
+
+        #home {
+            display: block; /* 기본적으로 home 섹션을 표시 */
+        }
+    </style>
+</head>
+<body>
+    <div id="navbox">
+        <h1>YEONSEO's PAGE</h1>
+        <p>Hi, My name is Yeon Seo Kim.<br>Welcome to my Page!</p>
+        <a href="mailto:qnqndustj@daum.net">-MAIL-</a>
+        <a href="https://www.instagram.com/ayxxsxx/">-INSTA-</a>
+        <br><br> <hr>
+        <nav>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#AboutMe">ABOUT ME</a></li>
+                <li><a href="#Interest">INTEREST</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="myprf"></div>
+
+    <section id="home">
+        <div id="mypic">
+            <span>2002.01.09<br>Computer Engineering, Kangwon Univ<br>Be Ambitious!</span>
+        </div>
+    </section>
+
+    <section id="AboutMe">
+        <div id="fam"></div>
+        <p id="f">My family consists of four members: father, mother, me, and younger brother. They communicate actively with each other
+            and are the most reliable supportive people when they have a hard time. I am especially close with my younger brother.
+            I share my hobby with my younger brother. If you enjoy hobbies that you like together, you can relieve your fatigue from the day.
+            My mom and dad are my strong protectors. They always support and trust me. I feel like I am where I am now thanks to your support.</p>
+        <div id="mbti"></div>
+        <p id="m">My Mbiti is ESTP <br>To sum it up with keywords, they are extroverted, realistic, rational, and cognitive.
+            I like to meet people, communicate, and maintain relationships. When I rest, I usually make appointments with my friends,
+            and I rarely rest at home. Going out and meeting people is something that recharges my energy. However, I am shy, so I need time with people
+            I meet for the first time. I also have a realistic personality. I work by distinguishing what I need currently and focusing on what I need most.
+            However, I lack a bit of future-orientedness, so I am trying to look forward a little. I am also rational, and I tend to assert my opinion
+            by putting reason and logic first rather than focusing on emotions.</p>
+    </section>
+
+    <section id="Interest">
+        <div id="g1"></div>
+        <div id="g2"></div>
+        <div id="g3"></div>
+        <div id="g4"></div>
+        <p>My hobby is playing the guitar. As I first encountered guitar in the central club and participated in many performances,
+            I have become a must-have for me now.
+            When I get tired from studying, I often soothe my body and mind that are tired from guitar.
+        </p>
+    </section>
+</body>
+</html>
